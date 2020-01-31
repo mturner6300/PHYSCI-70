@@ -10,4 +10,31 @@ p {font-size: 16px;}
 .container-fluid {
   padding: 30px;
   padding-bottom: 70px;
+  text-align: center;
+}
+
+img.img-responsive-margin {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2%;
+}
+
+#myID {
+  color: black
+}
+
+.content {
+  text-align: left;
+  padding-left: 10%;
+
+}
+
+ul {
+  padding-left: 8%;
+}
+
+#exploration h2 {
+  text-align: left;
+  padding-left: 10%;
 }
