@@ -12,14 +12,29 @@
 </head>
 <body>
 
-<div class="container-fluid">
-  <h2><b>Week 1: Introduction</b></h2> <br> 
+<nav class="navbar navbar-default navbar-fixed-top text-center" id ='navigation'>
+  <div class = "container-fluid" >
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="../index.html">Home</a></li>
+      <li><a href="#">About Me</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="../01_intro/index.html">Week 1</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container-fluid" id = "weekone">
+  <br><h2><b>Week 1: Introduction</b></h2> <br> 
   <div class="row">
       <h2 id = "myID"> Electronics and Simple Circuits </h2>
       <img src="./breadboard.jpg" class="img-responsive-margin" style="width:35%" alt="Image of Simple Circuit">
 
       <div class = "content">
-          <h3><b>Objectives:</b></h3>
+          <br><h3><b>Objectives:</b></h3>
             <ul>
               <li>Understand the basics of electronics
               <li>Learn how a breadboard works
