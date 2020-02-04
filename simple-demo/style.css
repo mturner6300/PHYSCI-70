@@ -93,3 +93,10 @@ ul {
   margin-left: auto;
   margin-right: auto;
 }
+
+#protitle iframe{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+}
