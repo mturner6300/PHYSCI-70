@@ -47,3 +47,35 @@ ul {
     padding-bottom: 70px;
     text-align: center;
 }
+
+#centertext h1 {
+    text-align:center;
+    padding-top: 5%;
+}
+
+#centertext img {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2%;
+}
+
+#return {
+  text-align: center;
+ 
+}
+
+#centertext p {
+  text-align: left;
+  padding-top: 3%;
+  text-decoration: none;
+  text-indent: 5%;
+  margin-left: 25%;
+  margin-right: 25%;
+
+}
+
+#protitle{
+  padding-top: 5%;
+  text-align: center;
+}
