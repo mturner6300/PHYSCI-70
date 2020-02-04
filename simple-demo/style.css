@@ -42,6 +42,14 @@ ul {
   padding-left: 10%;
 }
 
+#exploration p{
+  text-align: left;
+  text-indent: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 1%;
+}
+
 #weekone {
     padding: 30px;
     padding-bottom: 70px;
@@ -99,4 +107,4 @@ ul {
   margin-left: auto;
   margin-right: auto;
 }
-}
+
