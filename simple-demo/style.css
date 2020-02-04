@@ -75,7 +75,21 @@ ul {
 
 }
 
-#protitle{
-  padding-top: 5%;
+#protitle h1{
   text-align: center;
+  padding-top: 8%;
+}
+
+#protitle p{
+  text-align: left;
+  margin-left: 25%;
+  margin-right: 25%;
+  text-indent: 5%;
+}
+
+#protitle img{
+  display: block;
+  padding-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
 }
