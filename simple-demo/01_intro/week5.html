@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PHYSCI 70: Intro to Digital Fabrication </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="../style.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top text-center" id ='navigation'>
+    <div class = "container-fluid" >
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="../index.html">Home</a></li>
+        <li><a href="../aboutme.html">About Me</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="../01_intro/index.html">Week 1</a></li>
+            <li><a href="../01_intro/week2.html">Week 2</a></li>
+            <li><a href="../01_intro/week3.html">Week 3</a></li>
+            <li><a href="../01_intro/week4.html">Week 4</a></li>
+            <li><a href="../01_intro/week5.html">Week 5</a></li>
+            <li><a href="../01_intro/projectproposal.html">Project Proposal</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+<div class="container-fluid" id = "weekone">
+  <br><h2><b>Week 5: 3D Printing</b></h2>
+  <div class="row">
+      <img src="./PolarBear.jpg" class="img-responsive-margin" style="width:35%" alt="Image of Simple Circuit">
+
+      <div class = "content">
+          <br><h3><b>Objectives:</b></h3>
+            <ul>
+              <li> Design and print an object that can't be made through subtractive measures</li>
+              <li> Scan and print an object</li>
+            </ul>
+      </div>
+
+      <div id = "exploration">
+        <br><h2><b>Design</b></h2>
+        <p>In order for my design to not be easily made with subtractive measures, I wanted to add overhangs to it.
+            I started by following the lampshade tutorial by fusion desk on youtube: <a href = "https://www.youtube.com/watch?v=3PnKBSOulwo&t=335s"></a>
+            I created a sketch with the halfway point being an axis and made sure it had a flat top and bottom. I 
+            the revolve my sketch to create a 3D body. I used the shell option to hollow out my object.
+            From there I projected the body back onto a plane and drew 
+            two curves that connected each face. I then extruded the space between these lines and made it intersect with
+            the main body. Now I was left with two thin strips which I could place in a circular pattern to create my
+            egg like object.
+        </p>
+        <img src = "./Sketch1.png" class = "img-responsive-margin" style="width:60%" alt="Image of the circuit">
+        <img src = "./Body 1.png" class = "img-responsive-margin" style="width:60%" alt="Image of the circuit">
+        <img src = "./Body2.png" class = "img-responsive-margin" style="width:60%" alt="Image of the circuit">
+        <img src = "./Sketch2.png" class = "img-responsive-margin" style="width:60%" alt="Image of the circuit">
+        <img src = "./Body3.png" class = "img-responsive-margin" style="width:60%" alt="Image of the circuit">
+        <img src = "./Body4.png" class = "img-responsive-margin" style="width:60%" alt="Image of the circuit">
+        <br><h2><b>Scanning</b></h2>
+        <p> In honor of Polar Bear Day in Pforzheimer House, I wanted to scan my polar bear I got on Housing Day.
+            I used the Sense8 to capture the object and I was actually very happy with how it turned out. After
+            solidifying the gaps that the sensor missed, I ended up with a really good model. 
+        </p>
+        <p> Here is the original object:</p>
+        <br><img src='./PolarBearOg.jpg' style="width:40%" alt="Arduino Code"><br>
+        <p>Here is the 3D print:
+        </p>
+        <br><img src='./PolarBearSide.jpg' style="width:30%" alt = "Gif of Circuit Working">
+        <img src='./PolarBear.jpg' style="width:30%" alt = "Gif of Circuit Working">
+      </div>
+      <br><p><a href='../index.html'>Return home</a></p>
+   
+  </div>
+
+ 
+  
+  
+</div>
+
+</body>
+</html>
