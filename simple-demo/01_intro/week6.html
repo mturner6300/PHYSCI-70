@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PHYSCI 70: Intro to Digital Fabrication </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="../style.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top text-center" id ='navigation'>
+    <div class = "container-fluid" >
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="../index.html">Home</a></li>
+        <li><a href="../aboutme.html">About Me</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="../01_intro/index.html">Week 1</a></li>
+            <li><a href="../01_intro/week2.html">Week 2</a></li>
+            <li><a href="../01_intro/week3.html">Week 3</a></li>
+            <li><a href="../01_intro/week4.html">Week 4</a></li>
+            <li><a href="../01_intro/week5.html">Week 5</a></li>
+            <li><a href="../01_intro/week6.html">Week 6</a></li>
+            <li><a href="../01_intro/projectproposal.html">Project Proposal</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+<div class="container-fluid" id = "weekone">
+  <br><h2><b>Week 6: Electronic Input Devices</b></h2>
+  <div class="row">
+      <img src="./CapTouch.jpg" class="img-responsive-margin" style="width:35%" alt="Image of Simple Circuit">
+
+      <div class = "content">
+          <br><h3><b>Objectives:</b></h3>
+            <ul>
+              <li> Make a capactive sensor</li>
+            </ul>
+      </div>
+
+      <div id = "exploration">
+        <br><h2><b>Build</b></h2>
+        <p>For my project, I wanted to make a simple keyboard and explore the tone function in arduino
+            in preparation for my final project idea. I've set up a circuit that uses two 
+            capacitive touch sensors to produce three distinct tones when touched. Each one touched
+            separately produces a distinct sound and when both are touched, they produce a new sound. 
+            Each capacitive touch sensor exists in its own loop and its output decides the input for
+            the buzzer in the circuit.
+        </p>
+        <img src = "./CapTouchunedit.jpg" class = "img-responsive-margin" style="width:40%" alt="Image of the circuit">
+        <br><h2>Circuit Schematic</h2>
+        <p>Here is the schematic which shows how the circuit was constructed. The box represents the Arduino 
+            Metro and the circled numbers inside represent different pins.
+        </p>
+        <img src = "./Schematic.png" class = "img-responsive-margin" style="width:40%" alt="Image of the circuit">
+        <br><h2>Code</h2>
+        <p>In the code I define each piece of copper tape as its own capactive touch sensor using commands
+            from the capacitivetouch library. 1000 is an abritrary value I chose from guessing and testing. 
+            I had to raise the value in the condition where both sensors are pressed because I was decreasing
+            the resistance by linking the sensors with my hand. 
+        </p>
+        <img src = "./CapCode.png" class = "img-responsive-margin" style="width:70%" alt="Image of the circuit">
+        <br><h2>In Action</h2>
+        <p>Here I've filmed myself demonstrating the circuit's three tone capability with only two sensors.</p>
+        <br><iframe width="560" height="315" src="https://www.youtube.com/embed/en96vu290Uk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h2>Future Project Concerns and Improvements</h2>
+        <p>The fact that the circuit produces the tones I specified tells me that the code works fine. However,
+            the circuit is a little unpredictable. I found it making sounds when nothing was pressed or changing
+            rapidly between two tones when one was pressed. This could be because of how close I had the sensors
+            to each other and to the arduino board. In making my final project, I want to make a clear separation 
+            between the components so I know nothing else is affecting the resistance of the touch capacitors. 
+        </p>
+        </div>
+        <br><p><a href='../index.html'>Return home</a></p>
+   
+  </div>
+
+ 
+  
+  
+</div>
+
+</body>
+</html>
