@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PHYSCI 70: Intro to Digital Fabrication </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="../style.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top text-center" id ='navigation'>
+    <div class = "container-fluid" >
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="../index.html">Home</a></li>
+        <li><a href="../aboutme.html">About Me</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="../01_intro/index.html">Week 1</a></li>
+            <li><a href="../01_intro/week2.html">Week 2</a></li>
+            <li><a href="../01_intro/week3.html">Week 3</a></li>
+            <li><a href="../01_intro/week4.html">Week 4</a></li>
+            <li><a href="../01_intro/week5.html">Week 5</a></li>
+            <li><a href="../01_intro/week6.html">Week 6</a></li>
+            <li><a href="../01_intro/week7.html">Week 7</a></li>
+            <li><a href="../01_intro/projectproposal.html">Project Proposal</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+<div class="container-fluid" id = "weekone">
+  <br><h2><b>Week 7: Output Devices</b></h2>
+  <div class="row">
+      <img src="./ledstrip.png" class="img-responsive-margin" style="width:35%" alt="Image of Simple Circuit">
+
+      <div class = "content">
+          <br><h3><b>Objectives:</b></h3>
+            <ul>
+              <li> Control an output device with a microcontroller</li>
+            </ul>
+      </div>
+
+      <div id = "exploration">
+        <br><h2><b>LED strips</b></h2>
+        <p>For this week, I wanted to learn more a about LED strips since I'd never used them before. My 
+            goal was to make the sample code from the Neopixels library work. In failing at making the 
+            strandtest code work, I realized that I couldn't use the wire soldered on DO, because I needed 
+            the Arduino connected to DIN (Data in) to change the state of the lights. I did this by
+            attaching an alligator clip to DIN and connecting that to a wire from the arduino channel. 
+            The fact that GRN and 5V were soldered on the opposite end of the strip didn't matter since
+            Neopixels can be powered and grounded from either end.
+        </p>
+        <img src = "./Soldered.jpg" class = "img-responsive-margin" style="width:40%" alt="Image of the circuit"> 
+        <img src = "./Alligator.jpg" class = "img-responsive-margin" style="width:40%" alt="Image of the circuit">
+        <br><h2>Circuit Schematic</h2>
+        <p>Here is the schematic which shows how the circuit was constructed. The box represents the Arduino 
+            Metro and the circled numbers inside represent different pins. This circuit features a pull-up resistor
+            which causes a High to Low transition for pin 2 when the button is pressed. There is also a diode
+            to reduce noise. The LED strip is attached to just ground, power, and pin 6.
+        </p>
+        <img src = "./buttoncycler.png" class = "img-responsive-margin" style="width:40%" alt="Image of the circuit">
+
+        <p> Here is what my circuit looks like when built:</p>
+        <img src = "./Built.jpg" class = "img-responsive-margin" style="width:40%" alt="Image of the circuit">
+        <br><h2>Code</h2>
+        <p>As for the code, I used the buttoncycler example code found in the Arduino Neopixels library. I made
+            some modifications, making the modes the ones I liked the most. I also played around with the speed 
+            each mode runs at. Here is a screenshot of the code that was changed:
+        </p>
+        <img src = "./buttonchange.png" class = "img-responsive-margin" style="width:70%" alt="Image of the circuit">
+        <br><h2>In Action</h2>
+        <p>Here is a video showing the LED strip changing through 5 modes with a button press.</p>
+        <br><iframe width="560" height="315" src="https://www.youtube.com/embed/gDA-7MjwKNo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <br><p><a href='../index.html'>Return home</a></p>
+   
+  </div>
+
+ 
+  
+  
+</div>
+
+</body>
+</html>
